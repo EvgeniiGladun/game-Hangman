@@ -56,6 +56,7 @@ body {
 @media(max-width:1000px) {
     body {
         width: 350px;
+        margin-top: 20px;
     }
 
     .step__h1 {
@@ -71,6 +72,6 @@ body {
     }
     
     .audio {
-        margin:20px 30px;
+        margin:20px 45px;
     }
 }
