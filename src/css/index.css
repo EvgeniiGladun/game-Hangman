@@ -1,12 +1,19 @@
 * {
-background: black;
-margin: 0;
-padding: 0;
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
-    width: 1000px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {
@@ -32,11 +39,11 @@ body {
     font-size: 70px;
     text-align: center;
     margin-top: 200px;
-    color:rgb(28, 221, 255);
+    color: rgb(28, 221, 255);
 }
 
 .step__h2:hover {
-    color:rgb(117, 117, 117)
+    color: rgb(117, 117, 117)
 }
 
 .step__p {
@@ -50,28 +57,24 @@ body {
 }
 
 .audio {
-    margin:20px 350px;
+    margin: 20px 45px;
+    margin: 20px auto 0;
+    display: table;
+
 }
 
 @media(max-width:1000px) {
-    body {
-        width: 350px;
-        margin-top: 20px;
-    }
 
     .step__h1 {
         font-size: 40px;
     }
-    
+
     .step__h2 {
         font-size: 50px;
     }
-    
+
     .step__p {
         font-size: 20px;
     }
-    
-    .audio {
-        margin:20px 45px;
-    }
+
 }
