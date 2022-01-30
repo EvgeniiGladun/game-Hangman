@@ -2,8 +2,6 @@
 background: black;
 margin: 0;
 padding: 0;
-max-width: 100%;
-max-height: 100%;
 }
 
 body {
@@ -53,4 +51,26 @@ body {
 
 .audio {
     margin:20px 350px;
+}
+
+@media(max-width:1000px) {
+    body {
+        width: 350px;
+    }
+
+    .step__h1 {
+        font-size: 40px;
+    }
+    
+    .step__h2 {
+        font-size: 50px;
+    }
+    
+    .step__p {
+        font-size: 20px;
+    }
+    
+    .audio {
+        margin:20px 30px;
+    }
 }
