@@ -74,7 +74,7 @@ alert('У тебя есть ' + attempts + ' попыток на одно заг
 
 while (remainingLetters > 0 && attempts > 0) {
 
-  alert(answerArray.join(' ') + ' ' + ' нажми "ОК"');
+  alert('Загаданное слово: ' + answerArray.join(' ') + ' ' + ' нажми "ОК"');
 
   let guess = prompt('Угадайте букву или нажмите "отмена" что бы выйти из игры!');
 
