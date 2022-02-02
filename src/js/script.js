@@ -13,7 +13,6 @@ if (likesCars) {
 }
 
 
-
 let words = [
   "программа",
   "макака",
@@ -59,6 +58,7 @@ let words = [
   "максим",
   "женя",
 ];
+
 
 let word = words[Math.floor(Math.random() * words.length)];
 
