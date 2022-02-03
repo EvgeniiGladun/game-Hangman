@@ -97,7 +97,6 @@ function word(allWords) {
 }
 
 let randomWord = word(words);
-let word = words[Math.floor(Math.random() * words.length)];
 
 let answerArray = [];
 for (i = 0; i < randomWord.length; i++) {
