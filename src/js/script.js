@@ -1,3 +1,35 @@
+let codWord = prompt('Ты знаешь кодовое слово? 🤨 ' + 'иначе нажми "ОТМЕНА"');
+if (codWord === null || codWord === '') {
+  alert('Окей. Едем дальше 🚗');
+
+
+} else if (codWord.toLowerCase() === 'илья') {
+  alert(codWord + ' 🙂');
+
+
+} else if (codWord.toLowerCase() === 'ваня') {
+  alert(codWord + '  🙂');
+
+
+} else if (codWord.toLowerCase() === '_') {
+  alert(codWord + '  🙂');
+
+
+} else if (codWord.toLowerCase() === '_') {
+  alert(codWord + '  🙂');
+
+
+} else if (codWord.toLowerCase() === '_') {
+  alert(codWord + '  🙂');
+
+
+} else if (codWord.toLowerCase() === '_') {
+  alert(codWord + '  🙂');
+
+
+}
+
+
 let name = prompt('Как вас зовут?');
 if (name) {
   alert('Привет, ' + name);
@@ -60,14 +92,19 @@ let words = [
   "женя",
 ];
 
-let word = words[Math.floor(Math.random() * words.length)];
+
+function word(allWords) {
+  return allWords[Math.floor(Math.random() * allWords.length)];
+}
+
+let randomWord = word(words);
 
 let answerArray = [];
-for (i = 0; i < word.length; i++) {
+for (i = 0; i < randomWord.length; i++) {
   answerArray[i] = '_';
 }
 
-let remainingLetters = word.length;
+let remainingLetters = randomWord.length;
 let attempts = 10;
 
 alert('У тебя есть ' + attempts + ' попыток на одно загаданное слово');
@@ -89,8 +126,8 @@ while (remainingLetters > 0 && attempts > 0) {
     alert('Введите, только одну букву.');
 
   } else {
-    for (j = 0; j < word.length; j++) {
-      if (word[j] === guess.toLowerCase() && answerArray[j] === "_") {
+    for (j = 0; j < randomWord.length; j++) {
+      if (randomWord[j] === guess.toLowerCase() && answerArray[j] === "_") {
         answerArray[j] = guess.toLowerCase();
         remainingLetters--;
       }
@@ -107,5 +144,5 @@ while (remainingLetters > 0 && attempts > 0) {
 
 if (remainingLetters == 0) {
   alert(answerArray.join(''));
-  alert('Отлично! Вы одгадали слово - ' + word);
+  alert('Отлично! Вы одгадали слово - ' + randomWord);
 }
