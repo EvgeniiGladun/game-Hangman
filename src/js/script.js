@@ -135,7 +135,7 @@ while (remainingLetters > 0 && attempts > 0) {
     attempts--;
     alert('Осталось попыток: ' + attempts);
 
-    if (attempts === 10) {
+    if (attempts === 0) {
       alert('Ты проиграл 😥');
     }
   }
