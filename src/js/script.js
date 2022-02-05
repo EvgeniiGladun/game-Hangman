@@ -1,33 +1,33 @@
-let codWord = prompt('Ты знаешь кодовое слово? 🤨 ' + 'иначе нажми "ОТМЕНА"');
-if (codWord === null || codWord === '') {
-  alert('Окей. Едем дальше 🚗');
+// let codWord = prompt('Ты знаешь кодовое слово? 🤨 ' + 'иначе нажми "ОТМЕНА"');
+// if (codWord === null || codWord === '') {
+//   alert('Окей. Едем дальше 🚗');
 
 
-} else if (codWord.toLowerCase() === 'илья') {
-  alert(codWord + ' 🙂');
+// } else if (codWord.toLowerCase() === 'илья') {
+//   alert(codWord + ' 🙂');
 
 
-} else if (codWord.toLowerCase() === 'ваня') {
-  alert(codWord + '  🙂');
+// } else if (codWord.toLowerCase() === 'ваня') {
+//   alert(codWord + '  🙂');
 
 
-} else if (codWord.toLowerCase() === '_') {
-  alert(codWord + '  🙂');
+// } else if (codWord.toLowerCase() === '_') {
+//   alert(codWord + '  🙂');
 
 
-} else if (codWord.toLowerCase() === '_') {
-  alert(codWord + '  🙂');
+// } else if (codWord.toLowerCase() === '_') {
+//   alert(codWord + '  🙂');
 
 
-} else if (codWord.toLowerCase() === '_') {
-  alert(codWord + '  🙂');
+// } else if (codWord.toLowerCase() === '_') {
+//   alert(codWord + '  🙂');
 
 
-} else if (codWord.toLowerCase() === '_') {
-  alert(codWord + '  🙂');
+// } else if (codWord.toLowerCase() === '_') {
+//   alert(codWord + '  🙂');
 
 
-}
+// }
 
 
 let name = prompt('Как вас зовут?');
@@ -143,5 +143,6 @@ while (remainingLetters > 0 && attempts > 0) {
 
 if (remainingLetters == 0) {
   alert(answerArray.join(''));
-  alert('Отлично! Вы одгадали слово - ' + word);
+  alert('Отлично! Вы одгадали слово - ' + randomWord);
+  
 }
