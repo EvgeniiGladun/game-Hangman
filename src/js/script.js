@@ -1,3 +1,11 @@
+const headingElemenstH = document.getElementById('main-Heading');
+
+let headingPerson = prompt( 'Введи любое слово, увидишь его в финале 🙂' );
+headingElemenstH.innerHTML = headingPerson;
+
+//  alert('Супер! Идём дальше 😉');
+//  alert('Введите хотя бы 1 букву 🤨');
+
 // let codWord = prompt('Ты знаешь кодовое слово? 🤨 ' + 'иначе нажми "ОТМЕНА"');
 // if (codWord === null || codWord === '') {
 //   alert('Окей. Едем дальше 🚗');
@@ -135,7 +143,7 @@ while (remainingLetters > 0 && attempts > 0) {
     attempts--;
     alert('Осталось попыток: ' + attempts);
 
-    if (attempts === 0) {
+    if (attempts < -1) {
       alert('Ты проиграл 😥');
     }
   }
